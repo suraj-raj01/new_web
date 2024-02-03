@@ -1,0 +1,511 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("spenser.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* animation: photo 18s infinite ease-in; */
+    opacity: 1;
+}
+
+/* @keyframes photo{
+    0%{
+        background-image: url("for-bakground.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url("spenser.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url("spenser-sembrat.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+} */
+
+.main {
+    pointer-events: fill;
+    height: 100vh;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+.navbar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+#nav-left #logo {
+    font-weight: 800;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+#nav-left a {
+    margin-right: 30px;
+    width: 50%;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: crimson;
+}
+
+#nav-right a {
+    margin-left: 30px;
+    width: 50%;
+    text-align: right;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: crimson;
+}
+
+.hero {
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#hero-left {
+    height: 40vh;
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+#hero-left #box1 {
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#box1 h1 {
+    font-size: 8vh;
+    color: #ffffff;
+}
+
+#hero-left #box2 {
+    height: 11vh;
+    width: 100%;
+}
+
+#box2 h1 {
+    letter-spacing: 8px;
+    font-size: 10vh;
+    color: deepskyblue;
+}
+
+#hero-left button {
+    font-size: 3.5vh;
+    padding: 10px 15px;
+    border: 1px solid orangered;
+    background-color: orangered;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+#hero-left button:hover {
+    transition: 0.8s;
+    opacity: 1;
+    scale: 1.01;
+}
+
+#hero-right {
+    height: 60vh;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#hero-right #box1 {
+    text-align: justify;
+    height: 15%;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.7vh;
+    color: #c1bebe;
+}
+
+#hero-right #box2 {
+    height: 40%;
+    width: 100%;
+}
+
+.img-box {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 2px black;
+}
+
+#hero-right #box2 .img-box {
+    height: 100%;
+    width: 100%;
+    background-image: url("spenser.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: animate 20s infinite;
+
+}
+
+/* #box2 img:hover{
+    transition: 1.1s ease-in-out;
+    scale: 1.1;
+} */
+@keyframes animate {
+    0% {
+        background-image: url("spenser-sembrat1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    15% {
+        background-image: url("spenser.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        scale: 1.04;
+    }
+
+    30% {
+        background-image: url("spenser-sembrat.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        scale: 1;
+    }
+
+    45% {
+        background-image: url("for-bakground.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        scale: 1.04;
+    }
+
+    60% {
+        background-image: url("spenser2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        scale: 1;
+    }
+
+    80% {
+        background-image: url("spenser1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        scale: 1.04;
+    }
+
+    100% {
+        background-image: url("spenser3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        scale: 1;
+    }
+}
+
+#hero-right #box3 {
+    height: 20%;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.7vh;
+    color: #c1bebe;
+}
+
+#hero-right #box3 p {
+    margin-top: 40px;
+}
+
+#hero-right #box4 {
+    height: 25%;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.7vh;
+    color: #c1bebe;
+}
+
+#hero-right #box4 p {
+    margin-top: 40px;
+}
+
+/** @media--------------------------**/
+
+@media (max-width: 720px) and (min-width: 300px) {
+    #nav-left #logo {
+        font-weight: 800;
+        font-family: cursive;
+        font-size: 10px;
+    }
+
+    #nav-left a {
+        margin-right: 10px;
+        width: 50%;
+        text-align: left;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 8px;
+        color: crimson;
+    }
+
+    #nav-right a {
+        margin-left: 30px;
+        width: 50%;
+        text-align: right;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 8px;
+        color: crimson;
+    }
+
+    #hero-left {
+        height: 20vh;
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+
+    #hero-left #box1 {
+        height: 3vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #box1 h1 {
+        font-size: 3vh;
+        color: #000000;
+    }
+
+    #hero-left #box2 {
+        height: 2.1vh;
+        width: 100%;
+    }
+
+    #box2 h1 {
+        letter-spacing: 4px;
+        font-size: 2.5vh;
+        color: #000000;
+    }
+
+    #hero-left button {
+        font-size: 1.5vh;
+        padding: 6px 10px;
+        border: 1px solid orangered;
+        background-color: orangered;
+        cursor: pointer;
+        color: white;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+
+    #hero-right {
+        height: 20vh;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #hero-right #box1 {
+        text-align: justify;
+        height: 20%;
+        width: 100%;
+        font-size: 0.5vh;
+        color: #dddddd;
+    }
+
+    #hero-right #box2 {
+        height: 40%;
+        width: 60%;
+    }
+
+    #hero-right #box2 img {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        /* animation: animate 2s ease-in-out infinite; */
+
+    }
+
+    #box2 img:hover {
+        transition: 1.1s ease-in-out;
+        scale: 1.1;
+    }
+
+    #hero-right #box3 {
+        height: 20%;
+        width: 100%;
+        font-size: 0.6vh;
+        color: #dddddd;
+    }
+
+    #hero-right #box3 p {
+        margin-top: 20px;
+    }
+
+    #hero-right #box4 {
+        height: 30%;
+        width: 100%;
+        font-size: 0.6vh;
+        color: #dddddd;
+    }
+
+    #hero-right #box4 p {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1150px) and (min-width: 650px) {
+    #hero-left {
+        height: 40vh;
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+
+    #hero-left #box1 {
+        height: 5vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #box1 h1 {
+        font-size: 5vh;
+        color: #000000;
+    }
+
+    #hero-left #box2 {
+        height: 5vh;
+        width: 100%;
+    }
+
+    #box2 h1 {
+        letter-spacing: 4px;
+        font-size: 5vh;
+        color: #000000;
+    }
+
+    #hero-left button {
+        font-size: 1.5vh;
+        padding: 10px 20px;
+        border: 1px solid orangered;
+        background-color: orangered;
+        cursor: pointer;
+        color: white;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+
+    #hero-right {
+        height: 30vh;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #hero-right #box1 {
+        text-align: justify;
+        height: 20%;
+        width: 100%;
+        font-size: 0.8vh;
+        color: #dddddd;
+    }
+
+    #hero-right #box2 {
+        height: 40%;
+        width: 60%;
+    }
+
+    #hero-right #box2 img {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        /* animation: animate 2s ease-in-out infinite; */
+
+    }
+
+    #box2 img:hover {
+        transition: 1.1s ease-in-out;
+        scale: 1.1;
+    }
+
+    #hero-right #box3 {
+        height: 20%;
+        width: 100%;
+        font-size: 0.8vh;
+        color: #dddddd;
+    }
+
+    #hero-right #box3 p {
+        margin-top: 20px;
+    }
+
+    #hero-right #box4 {
+        height: 30%;
+        width: 100%;
+        font-size: 0.8vh;
+        color: #dddddd;
+    }
+}
